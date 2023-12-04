@@ -19,8 +19,6 @@ function App() {
         <div className="App">
             <Todolist title="What to learn" tasks={tasks1}/>
             <Todolist title="Movies" tasks={tasks2}/>
-
-
         </div>
     );
 }
