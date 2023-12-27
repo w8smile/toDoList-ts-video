@@ -38,6 +38,11 @@ function App() {
         let newTasks = [newTask, ...tasks];
         setTasks(newTasks);
     }
+    const changeStatus = (taskId: string, newIsDoneValue: boolean) => {
+        const nextState: TaskType[] = tasks.map(t=>t.id===taskId ? {...t, isDone: newIsDoneValue} : t)
+        setTasks(nextState)
+    }
+
 
 
     return (
@@ -47,6 +52,8 @@ function App() {
                       removeTask={removeTask}
                       changeFilter={changeFilter}
                       addTask={addTask}
+                      changeTaskStatus={changeStatus}
+                      filter={filter}
             />
         </div>
     );

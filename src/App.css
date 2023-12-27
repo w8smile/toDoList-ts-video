@@ -2,9 +2,24 @@
   width: 200px;
   padding: 30px;
   display: flex;
-  background-color: #c636ff;
+  background-color: #1ecbb6;
 }
 
 .App > div {
   margin-right: 50px;
+}
+
+.error {
+  border: red 1px solid
+}
+.error-message {
+  color: red
+}
+
+.active-filter {
+  background-color: #0730fd;
+}
+
+.is-done {
+  opacity: 0.5;
 }
