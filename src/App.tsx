@@ -55,7 +55,7 @@ function App() {
 
     let [todolists, setTodolist] = useState<Array<TodoListType>>([
         {id: toDoListId1, title: 'What to learn', filter: 'active'},
-        {id: toDoListId2, title: 'What to buy', filter: 'completed'}
+        // {id: toDoListId2, title: 'What to buy', filter: 'completed'}
     ]);
 
     let [tasksObj, setTasks] = useState ({
@@ -65,9 +65,9 @@ function App() {
             {id: v1(), title: 'ReactJS', isDone: false},
             {id: v1(), title: 'Rest API', isDone: false},
             {id: v1(), title: 'GraphQL', isDone: false},],
-        [toDoListId2]: [
-            {id: v1(), title: 'BOOK', isDone: false},
-            {id: v1(), title: 'PEN', isDone: true},]
+        // [toDoListId2]: [
+        //     {id: v1(), title: 'BOOK', isDone: false},
+        //     {id: v1(), title: 'PEN', isDone: true},]
     })
     let removeTodolist = (todolistId: string) => {
         let filteredTodolist = todolists.filter(tl=> tl.id !== todolistId)
